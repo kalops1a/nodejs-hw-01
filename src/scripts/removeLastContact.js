@@ -12,7 +12,7 @@ async function removeLastContact() {
             console.log('No contacts to remove.');
         }
     } catch (error) {
-        console.error('Error removing last contact:', error);
+        console.error('Error removing last contact:', error.message);
     }
 }
 

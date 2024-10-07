@@ -9,7 +9,7 @@ async function addOneContact() {
         await writeContacts(contacts);
         console.log('One contact added successfully.');
     } catch (error) {
-        console.error('Error adding one contact:', error);
+        console.error('Error adding one contact:', error.message);
     }
 }
 

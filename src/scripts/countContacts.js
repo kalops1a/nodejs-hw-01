@@ -5,7 +5,7 @@ async function countContacts() {
         const contacts = await readContacts();
         console.log(`Total contacts: ${contacts.length}`);
     } catch (error) {
-        console.error('Error counting contacts:', error);
+        console.error('Error counting contacts:', error.message);
     }
 }
 

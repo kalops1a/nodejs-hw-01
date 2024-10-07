@@ -1,3 +1,4 @@
+
 const readContacts = require('../utils/readContacts');
 const writeContacts = require('../utils/writeContacts');
 const createFakeContact = require('../utils/createFakeContact');
@@ -11,7 +12,7 @@ async function generateContacts(count) {
         await writeContacts(contacts);
         console.log(`${count} new contacts added successfully.`);
     } catch (error) {
-        console.error('Error generating contacts:', error);
+        console.error('Error generating contacts:', error.message);
     }
 }
 
